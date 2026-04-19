@@ -1,0 +1,38 @@
+# Node / Web
+node_modules/
+dist/
+.env
+.env.local
+.DS_Store
+*.log
+
+# Vite
+web/dist/
+web/.vite/
+
+# Flutter / Dart
+android/.dart_tool/
+android/.flutter-plugins
+android/.flutter-plugins-dependencies
+android/.packages
+android/build/
+android/.pub-cache/
+android/.pub/
+android/android/local.properties
+android/android/.gradle/
+android/android/app/release/
+android/android/app/debug/
+android/*.iml
+android/*.ipr
+android/*.iws
+android/ios/
+android/linux/
+android/macos/
+android/web/
+android/windows/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
