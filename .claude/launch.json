@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "Web (Vite dev)",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "web",
+      "port": 5173
+    },
+    {
+      "name": "Web (Vite preview)",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "preview"],
+      "cwd": "web",
+      "port": 4173
+    }
+  ]
+}

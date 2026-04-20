@@ -36,3 +36,5 @@ android/windows/
 .vscode/
 *.swp
 *.swo
+.vercel
+.env*.local

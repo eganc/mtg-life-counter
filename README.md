@@ -1,91 +1,50 @@
-# MTG Life Counter
+# MTG Life Counter 📱⚔️
 
-> No ads. No accounts. No one arguing about the starting life total.
+> **"No ads. No accounts. No one arguing about the starting life total."**
 
-Track life and poison across 1v1 and multiplayer. Screen rotates so every player faces their own impending doom from their seat — tap either side of the life total to adjust by 1, because that's what you were doing anyway.
-
-**Platforms:** Web (React, Vercel-ready) · Android (Flutter)  
-**License:** MIT · **Privacy:** Fully offline. We don't want your data — we just want to watch you lose to Thassa's Oracle.
+A streamlined, offline-first life tracker for Magic: The Gathering. Whether you're playing a quick 1v1 Standard match or a 4-player Commander pod that's definitely going to take three hours, this app keeps the focus on the stack, not the screen.
 
 ---
 
-## Project Structure
+## 🛠 Casting Requirements (Prerequisites)
 
-```
-mtg-life-counter/
-├── shared/       # Framework-agnostic TypeScript state logic
-├── web/          # React 18 + Vite + Tailwind web app
-└── android/      # Flutter 3 Android app
-```
+- **Node.js** 18+ & **npm** 9+
 
 ---
 
-## Prerequisites
+## 🌐 Web App: Deployment & Development
 
-- **Node.js** 18+ and npm 9+
-- **Flutter** 3.x SDK — https://docs.flutter.dev/get-started/install
-
----
-
-## Web App
-
+### 1. Local Playtesting
 ```bash
-# Install dependencies (run from repo root)
+# Install dependencies
 npm install
 
-# Start dev server with hot reload
+# Start the dev server
 npm run dev
-# → http://localhost:5173
-
-# Build for production (Vercel-ready)
-npm run build
 ```
 
-### Deploy to Vercel
+### 2. Deploying to Vercel (The Resolution)
+Vercel will auto-detect this as a Vite application and deploy it right out of the box.
 
 ```bash
-vercel --cwd web
+npx vercel
 ```
 
 ---
 
-## Android App
+## ✨ Game Rules (Features)
 
-```bash
-cd android
-flutter pub get
-flutter run
-
-# Release APK
-flutter build apk --release
-# → android/build/app/outputs/flutter-apk/app-release.apk
-```
+- **Tactile Inputs**: Tap left/right of the life total for ±1 — the way Garfield intended.
+- **Mana Bursts**: Long press or use shortcuts for ±5 and ±10 (for when *Earthquake* resolves).
+- **Poison Counters**: Because someone in your playgroup always brings Infect.
+- **Dynamic Rotation**: Screen rotates so every player faces their own impending doom.
+- **Persistence**: Commander games outlive browser sessions. We save state locally.
+- **Grim Privacy**: No backend. No telemetry. Dark like a turn-one *Necropotence*.
 
 ---
 
-## Formats
+## 🤝 Contributing
 
-| Format           | Life | Poison | Notes |
-|-----------------|------|--------|-------|
-| Standard        | 20   | 10     | Two Bolts to the face and you're done |
-| Commander       | 40   | 10     | Long enough for someone to combo off twice |
-| Two-Headed Giant| 30   | 15     | Share life, share blame |
-| Custom          | any  | 10     | For when you've houserule everything anyway |
+PRs are welcome. If you want to make a major change, open an issue first — unlike a *Counterspell*, we're actually willing to discuss it.
 
----
-
-## Features
-
-- Tap left/right of the life total for ±1 — the way nature intended
-- ±5 and ±10 for when Earthquake resolves
-- Poison counter tracking — because someone always brings Infect
-- Undo history (last 10 moves) for when you fat-finger mid-storm
-- Screen orientations per player count: opposite in 1v1, rotated at 90° increments in multiplayer
-- Persists across restarts — Commander games outlive browser sessions
-- No backend. No telemetry. Dark like your Swamps.
-
----
-
-## Contributing
-
-PRs welcome. Open an issue first for major changes — unlike a Counterspell, we're willing to discuss it.
+*License: MIT · Dark Mode: Mandatory*
