@@ -1,4 +1,3 @@
-/// <reference types="vitest" />
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
@@ -33,12 +32,4 @@ export default defineConfig({
     })
   ],
   server: { port: 5173 },
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    setupFiles: './src/setupTests.ts',
-    alias: {
-      '@exodus/bytes/encoding-lite.js': '@exodus/bytes/encoding-lite.js',
-    }
-  }
 });
