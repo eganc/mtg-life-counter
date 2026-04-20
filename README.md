@@ -1,9 +1,11 @@
 # MTG Life Counter
 
-A Magic: The Gathering life counter app for 1v1 and multiplayer (up to 4 players). Tracks life totals and poison counters with full undo history.
+> No ads. No accounts. No one arguing about the starting life total.
 
-**Platforms:** Web (React, Vercel-ready) · Android (Flutter, Google Play / F-Droid)  
-**License:** MIT · **Privacy:** Zero tracking, fully offline, no accounts required
+Track life and poison across 1v1 and multiplayer. Screen rotates so every player faces their own impending doom from their seat — tap either side of the life total to adjust by 1, because that's what you were doing anyway.
+
+**Platforms:** Web (React, Vercel-ready) · Android (Flutter)  
+**License:** MIT · **Privacy:** Fully offline. We don't want your data — we just want to watch you lose to Thassa's Oracle.
 
 ---
 
@@ -51,50 +53,39 @@ vercel --cwd web
 
 ```bash
 cd android
-
-# Install Flutter dependencies
 flutter pub get
-
-# Run on connected device / emulator
 flutter run
 
-# Build release APK
+# Release APK
 flutter build apk --release
-# Output: android/build/app/outputs/flutter-apk/app-release.apk
+# → android/build/app/outputs/flutter-apk/app-release.apk
 ```
 
 ---
 
-## Game Modes
+## Formats
 
-| Mode        | Players | Starting Life |
-|-------------|---------|--------------|
-| 1v1         | 2       | 20           |
-| Multiplayer | 3–4     | 20           |
-
-## Format Presets
-
-| Format           | Life | Poison |
-|-----------------|------|--------|
-| Standard        | 20   | 10     |
-| Commander       | 40   | 10     |
-| Two-Headed Giant| 30   | 15     |
-| Custom          | any  | 10     |
+| Format           | Life | Poison | Notes |
+|-----------------|------|--------|-------|
+| Standard        | 20   | 10     | Two Bolts to the face and you're done |
+| Commander       | 40   | 10     | Long enough for someone to combo off twice |
+| Two-Headed Giant| 30   | 15     | Share life, share blame |
+| Custom          | any  | 10     | For when you've houserule everything anyway |
 
 ---
 
 ## Features
 
-- Life total tracking (±1, ±5, ±10)
-- Poison counter tracking (±1)
-- Undo history (last 10 moves)
-- Format presets on game start
-- Persists across app restart (localStorage / SharedPreferences)
-- 1v1 and 3–4 player multiplayer modes
-- No backend, no accounts, no telemetry
+- Tap left/right of the life total for ±1 — the way nature intended
+- ±5 and ±10 for when Earthquake resolves
+- Poison counter tracking — because someone always brings Infect
+- Undo history (last 10 moves) for when you fat-finger mid-storm
+- Screen orientations per player count: opposite in 1v1, rotated at 90° increments in multiplayer
+- Persists across restarts — Commander games outlive browser sessions
+- No backend. No telemetry. Dark like your Swamps.
 
 ---
 
 ## Contributing
 
-PRs welcome. Please open an issue first for major changes.
+PRs welcome. Open an issue first for major changes — unlike a Counterspell, we're willing to discuss it.
